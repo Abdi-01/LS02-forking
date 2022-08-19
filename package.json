@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^5.4.3"
+  },
+  "scripts": {
+    "start": "lerna run start",
+    "frontend":"lerna run start --scope=frontend-react",
+    "backend":"lerna run start --scope=backend-api",
+    "test": "lerna run test"
+  }
+}
